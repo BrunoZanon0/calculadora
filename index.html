@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <div class="historicotext">
+            <h1>Historico</h1><br>
+            <div class="cleanparent"><button class="clear" onclick="zerahistorico()">Clear</button></div>
+            <p></p>
+        </div>
+        <div class="visor1">
+            <span class="visor"></span>
+            
+        </div>
+        <div class="btn1">
+            <div>
+                <button onclick="historico()">History</button>
+                <button onclick="zerar()">C</button>
+                <button onclick="btn('**')" >^¹²³</button>
+                <button onclick="btn('/')"class="indicador">/</button>
+            </div>
+            <div>
+                <button onclick="btn(7)">7</button>
+                <button onclick="btn(8)">8</button>
+                <button onclick="btn(9)">9</button>
+                <button onclick="btn('+')"class="indicador">+</button>
+            </div>
+            <div>
+                <button onclick="btn(4)">4</button>
+                <button onclick="btn(5)">5</button>
+                <button onclick="btn(6)">6</button>
+                <button onclick="btn('-')"class="indicador">-</button>
+            </div>
+            <div>
+                <button onclick="btn(1)">1</button>
+                <button onclick="btn(2)">2</button>
+                <button onclick="btn(3)">3</button>
+                <button onclick="btn('*')" class="indicador">x</button>
+            </div>
+            <div>
+                <button onclick="btn('.')">.</button>
+                <button onclick="btn('0')" >0</button>
+                <button onclick="apagar()">apagar</button>
+                <button onclick="resultado()" class="igual">=</button>
+            </div>
+        </div>
+    </main>
+</body>        
+<span class="desenho1"></span>
+<span class="desenho2"></span>
+<span class="desenho3"></span>
+<script src="index.js"></script>
+</html>
